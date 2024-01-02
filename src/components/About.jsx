@@ -8,7 +8,7 @@
 
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import resume from "../assets/Abolfazl-Mohsenpour-cv-en.pdf";
+import resume from "../assets/resume.pdf";
 
 import { styles } from "../style";
 import { services } from "../constants";
