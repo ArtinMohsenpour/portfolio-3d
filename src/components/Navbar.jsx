@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
+import resume from "../assets/Abolfazl-Mohsenpour-cv-en.pdf";
 import { logo, logoartin2, logoartin3, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -42,7 +43,18 @@ const Navbar = () => {
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
-              <a href={`#${link.id}`}>{link.title}</a>
+              {link.id === "resume" ? (
+                <a
+                  href={resume}
+                  download="Abolfazl-Mohsenpour-CV-en.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {link.title}
+                </a>
+              ) : (
+                <a href={`#${link.id}`}>{link.title}</a>
+              )}
             </li>
           ))}
         </ul>
@@ -72,7 +84,18 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`#${link.id}`}>{link.title}</a>
+                  {link.id === "resume" ? (
+                    <a
+                      href={resume}
+                      download="Abolfazl-Mohsenpour-CV-en.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {link.title}
+                    </a>
+                  ) : (
+                    <a href={`#${link.id}`}>{link.title}</a>
+                  )}
                 </li>
               ))}
             </ul>

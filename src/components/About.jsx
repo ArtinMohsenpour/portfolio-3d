@@ -8,6 +8,7 @@
 
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import resume from "../assets/Abolfazl-Mohsenpour-cv-en.pdf";
 
 import { styles } from "../style";
 import { services } from "../constants";
@@ -38,8 +39,9 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="mt-20 pt-20 ml-8">
-       
+      <motion.div variants={textVariant()} className="mt-20 pt-20 ml-10">
+        <p className={styles.sectionSubText}>Introduction</p>
+        {/* <h2 className={styles.sectionHeadText}>Experience</h2> */}
       </motion.div>
       <div className="flex flex-wrap">
         <motion.p
@@ -55,13 +57,17 @@ const About = () => {
           looking for the right opportunity to prove my skills and develop my
           career and become a professional full stack developer.
         </motion.p>
-        <div className="hero-container flex">
-          <div className="flex">
-            <div className="image-container flex"></div>
-          </div>
-        </div>
+        <a
+          href={resume}
+          className="hero-container flex"
+          download="Abolfazl-Mohsenpour-CV-en.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="image-container flex "></div>
+        </a>
       </div>
-      <div className=" flex flex-wrap gap-10 ml-20">
+      <div className=" flex flex-wrap gap-10 ml-0">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
