@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
-import resume from "../assets/Abolfazl-Mohsenpour-cv-en.pdf";
+import resume from "../assets/resume.pdf";
 import { logo, logoartin2, logoartin3, menu, close } from "../assets";
 
 const Navbar = () => {
