@@ -38,6 +38,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
 import onlinemenu from "./onlinemenu.png";
+import ecommerce from "./ecommerce.png";
 import banknote from "./banknote.png";
 import recipefinder from "./recipefinder.png";
 import piggame from "./piggame.png";
@@ -50,6 +51,7 @@ import tripguide from "./tripguide.png";
 
 export {
   piggame,
+  ecommerce,
   personalvlog,
   onlinemenu,
   recipefinder,

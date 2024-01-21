@@ -33,6 +33,7 @@ import {
   python,
   sass,
   onlinemenu,
+  ecommerce,
   recipefinder,
   personalvlog,
   firstportfolio,
@@ -194,6 +195,35 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "E-commerce (my online shop)",
+    description:
+      "I've crafted an online store utilizing React on the client side, Strapi as the content management system (CMS), and Stripe to manage the payment section.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Strapi",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "text-amber-400",
+      },
+      {
+        name: "HTML5,CSS3",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://artinland.vercel.app/",
+  },
   {
     name: "Fancy Restuarant",
     description:
