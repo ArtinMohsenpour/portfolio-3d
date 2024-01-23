@@ -11,9 +11,10 @@ const Tech = () => {
           <BallCanvas icon={tech.icon} />
         </div>
       ))}
-      <div>
-        <h2>Skills: </h2>
-        <p>
+      <div className="flex flex-wrap w-auto text-left pl-0 ml-0 md:justify-center">
+        <h2 className="h text-justify text-secondary text-3xl">Skills: </h2>
+        <br />
+        <p className=" ml-10 text-left text-secondary text-[17px] max-w-3xl leading-[30px]  text-xl">
           <span> • HTML, CSS, JavaScript </span> <br />
           <span> • React, redux, hooks, Rest APIs </span>
           <br />
@@ -23,9 +24,11 @@ const Tech = () => {
           <br />
           <span> • Bootstrap, SASS, Tailwind, Figma, Adobe XD, UI and UX </span>
           <br />
+          <br />
           <span>
             {" "}
-            Soft skills: Responsive Design, Communication, E-Commerce,
+            <span className="text-[26px]"> Soft skills:</span> Responsive
+            Design, Communication, E-Commerce,
           </span>
           <br />
           <span>
