@@ -48,14 +48,14 @@ const About = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-8 ml-10 flex text-justify text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Motivated and highly adaptable junior web developer with a strong
-          educational background in Web development and a passion for
-          programming. Experienced in a variety of programming languages,
-          including Python, JavaScript and React, with a focus on frontend web
-          development. Eager to leverage my technical skills and academic
-          knowledge to contribute effectively to web development projects. I'm
-          looking for the right opportunity to prove my skills and develop my
-          career and become a professional full stack developer.
+          I have experience in a variety of programming languages, including
+          Python, JavaScript, and React, with a focus on front-end web
+          development. Experienced using APIs, data types, Next.js, and UI/UX.
+          Eager to leverage my technical skills and academic knowledge to
+          contribute effectively to the team to improve web development
+          projects. With a commitment to continuous learning and staying up to
+          date with the latest industry trends, I am constantly striving to
+          enhance my skills and deliver top-notch results.
         </motion.p>
         <a
           href={resume}

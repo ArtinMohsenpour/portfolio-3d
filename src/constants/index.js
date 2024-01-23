@@ -131,10 +131,12 @@ const experiences = [
     iconBg: "#383E56",
     date: "Sep 2022-present  Bielefeld, Germany",
     points: [
-      "Recipe finder App: Html, CSS, JS, SASS – This website brings all recipes you might need all in one place.",
-      " Portfolio website: Html, CSS, JS, Bootstrap – This is my personal website to demonstrate my portfolio.",
-      "Pig Game: Html, CSS - This mini web page offers a fun game that you can play with your friend.",
-      "Bank App, Bankist App and more that you can see in my projects section.",
+     "E-commerce Website: HTML5, CSS3, JS, React, Tailwind, Next.js, Stapi, Stripe – (My online shop)",
+      "Portfolio website: HTML5, CSS3, react, three.js, tailwind, next.js – (My new 3D portfolio)",
+      "Recipe Finder App: HTML5, CSS3, JS, SASS – (This website brings all the recipes you might need in one place)",
+      "Pig Game: HTML5, CSS3 – (This mini web page offers a fun game that you can play with your friend)",
+      "Bank App, Bankist App, and more that you can see in my portfolio."
+  
     ],
   },
   {

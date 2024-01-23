@@ -9,9 +9,34 @@ const Tech = () => {
       {technologies.map((tech, index) => (
         <div className="w-28 h-28" key={tech.name}>
           <BallCanvas icon={tech.icon} />
-          
         </div>
       ))}
+      <div>
+        <h2>Skills: </h2>
+        <p>
+          <span> • HTML, CSS, JavaScript </span> <br />
+          <span> • React, redux, hooks, Rest APIs </span>
+          <br />
+          <span> • TypeScript, Python, JQUERY, Three.js </span>
+          <br />
+          <span> • Git, GitHub, Next.js, Datatypes </span>
+          <br />
+          <span> • Bootstrap, SASS, Tailwind, Figma, Adobe XD, UI and UX </span>
+          <br />
+          <span>
+            {" "}
+            Soft skills: Responsive Design, Communication, E-Commerce,
+          </span>
+          <br />
+          <span>
+            {" "}
+            Problem-Solving, Team Collaboration, Time Management, Attention to
+          </span>
+          <br />
+          <span> Detail, Accountability</span>
+          <br />
+        </p>
+      </div>
     </div>
   );
 };
