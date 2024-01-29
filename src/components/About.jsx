@@ -39,14 +39,17 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="mt-20 pt-20 ml-10">
+      <motion.div
+        variants={textVariant()}
+        className="mt-[6rem] ml-4  sm:mt-20 pt-[7rem] sm:pt-20  justify-center"
+      >
         <p className={styles.sectionSubText}>Introduction</p>
         {/* <h2 className={styles.sectionHeadText}>Experience</h2> */}
       </motion.div>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-8 ml-10 flex text-justify text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-4 mb-8 mx-4 flex text-justify text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           I have experience in a variety of programming languages, including
           Python, JavaScript, and React, with a focus on front-end web
@@ -57,17 +60,10 @@ const About = () => {
           date with the latest industry trends, I am constantly striving to
           enhance my skills and deliver top-notch results.
         </motion.p>
-        <a
-          href={resume}
-          className="hero-container flex"
-          download="Abolfazl-Mohsenpour-CV-en.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="image-container flex "></div>
-        </a>
+
+        <div className="image-container my-6 flex justify-center w-full"></div>
       </div>
-      <div className=" flex flex-wrap gap-10 ml-0">
+      <div className=" flex flex-wrap gap-10 ml-0 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
