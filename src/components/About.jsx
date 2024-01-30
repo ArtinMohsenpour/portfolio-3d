@@ -41,7 +41,7 @@ const About = () => {
     <>
       <motion.div
         variants={textVariant()}
-        className="mt-[6rem] ml-4 md:mx-0 md:ml-10  sm:mt-20 pt-[7rem] sm:pt-20  justify-center"
+        className="mt-[6rem] ml-5 md:mx-0 md:ml-10  sm:mt-20 pt-[7rem] sm:pt-[7rem]  justify-center"
       >
         <p className={styles.sectionSubText}>Introduction</p>
         {/* <h2 className={styles.sectionHeadText}>Experience</h2> */}
@@ -49,7 +49,7 @@ const About = () => {
       <div className="flex flex-wrap justify-center">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 mb-8 mx-4 md:mx-0 md:ml-10 flex text-justify text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-4 mb-8 ml-5 mx-4 md:mx-0 md:ml-10 flex text-justify text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           I have experience in a variety of programming languages, including
           Python, JavaScript, and React, with a focus on front-end web
