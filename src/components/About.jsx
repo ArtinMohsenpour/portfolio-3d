@@ -53,7 +53,7 @@ const About = () => {
         >
           I have experience in a variety of programming languages, including
           Python, JavaScript, and React, with a focus on front-end web
-          development. Experienced using APIs, data types, Next.js, and UI/UX.
+          development. Experienced using APIs, data types, Next.js, and UI.
           Eager to leverage my technical skills and academic knowledge to
           contribute effectively to the team to improve web development
           projects. With a commitment to continuous learning and staying up to
@@ -61,7 +61,7 @@ const About = () => {
           enhance my skills and deliver top-notch results.
         </motion.p>
 
-        <div className="image-container my-6 flex justify-center w-full"></div>
+        <div className="image-container my-5 flex justify-center w-full"></div>
       </div>
       <div className=" flex flex-wrap gap-10 ml-0 mt-8 md:mt-10 justify-center">
         {services.map((service, index) => (

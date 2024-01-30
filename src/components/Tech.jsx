@@ -26,22 +26,33 @@ const Tech = () => {
           </div>
         ))}
         <div className="flex flex-wrap mr-8 w-auto text-justify pl-0 ml-0 md:justify-center">
-          <h2 className="h text-justify text-secondary text-2xl ">Skills: </h2>
-          <br />
-          <p className=" text-justify text-wrap ml-8  text-secondary text-[17px] max-w-3xl leading-[30px]">
-            <span> • HTML, CSS, JavaScript </span>
-            <span>, React, redux, hooks, Rest APIs</span>
-            <span>, TypeScript, Python, JQUERY, Three.js</span>
-            <span>, Git, GitHub, Next.js, Datatypes</span>
-            <span>
-              , Bootstrap, SASS, Tailwind, Figma, Adobe XD, UI and UX
-            </span>{" "}
-            <h2 className="h text-justify mt-6  -ml-10 text-secondary text-2xl ">
-              Soft Skills:{" "}
-            </h2>
-            Responsive Design, Communication, E-Commerce, Problem-Solving, Team
-            Collaboration, Time Management, Attention to Detail, Accountability
-          </p>
+          <div className="container flex flex-row">
+            <div className="container flex flex-row w-7">
+              <h2 className="flex text-secondary text-[20px] sm:text-2xl  ">
+                Skills:
+              </h2>
+            </div>
+            <br />
+            <p className="flex sm:text-justify  ml-[85px]   text-secondary text-[17px] max-w-3xl leading-[30px]">
+              HTML, CSS, JavaScript , React, redux, hooks, Rest APIs ,
+              TypeScript, Python, JQUERY, Three.js , Git, GitHub, Next.js,
+              Datatypes , Bootstrap, SASS, Tailwind, Figma, Adobe XD, UI and UX{" "}
+            </p>
+            <br />
+          </div>
+          <div className="container flex flex-row ">
+            <div className="container flex flex-row w-7">
+              <h2 className=" flex text-secondary  lg:text-[20px] sm:text-2xl  ">
+                Soft Skills:
+              </h2>
+            </div>
+            <br />
+            <p className=" flex sm:text-justify  ml-[85px]  text-secondary text-[17px] max-w-3xl leading-[30px]">
+              Responsive Design, Communication, E-Commerce, Problem-Solving,
+              Team Collaboration, Time Management, Attention to Detail,
+              Accountability
+            </p>
+          </div>
         </div>
       </div>
     </div>
