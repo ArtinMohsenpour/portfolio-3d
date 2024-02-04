@@ -55,7 +55,7 @@ export const navLinks = [
   },
   {
     id: "resume",
-    title: "Download Resume",
+    title: "Resume",
   },
 ];
 
@@ -125,18 +125,17 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Junior web developer",
+    title: "Freelance web developer",
     company_name: "Self employed",
     icon: logoartin3,
     iconBg: "#383E56",
-    date: "Sep 2022-present  Bielefeld, Germany",
+    date: "Sep 2022-present  Cologne, Germany",
     points: [
-     "E-commerce Website: HTML5, CSS3, JS, React, Tailwind, Next.js, Stapi, Stripe – (My online shop)",
+      "E-commerce Website: HTML5, CSS3, JS, React, Tailwind, Next.js, Stapi, Stripe – (My online shop)",
+      "Banknote Authentication: MATLAB, Python, Image processing (Leveraging Haralick features for the analysis of banknote images to verify the authenticity of counterfeit currency)",
       "Portfolio website: HTML5, CSS3, react, three.js, tailwind, next.js – (My new 3D portfolio)",
       "Recipe Finder App: HTML5, CSS3, JS, SASS – (This website brings all the recipes you might need in one place)",
-      "Pig Game: HTML5, CSS3 – (This mini web page offers a fun game that you can play with your friend)",
-      "Bank App, Bankist App, and more that you can see in my portfolio."
-  
+      ,
     ],
   },
   {

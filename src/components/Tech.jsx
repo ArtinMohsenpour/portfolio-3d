@@ -4,12 +4,78 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 import { motion } from "framer-motion";
+import { Tilt } from "react-tilt";
 
 import { styles } from "../style";
 
 import { fadeIn, textVariant } from "../utils/motion";
 
+const ServiceCard = ({ title, text, index }) => {
+  return (
+    <Tilt className="bg-[#1d1836] xs:w-[450px] w-full left-12">
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.7)}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      >
+        <div
+          options={{ max: 45, scale: 1, speed: 450 }}
+          className="bg-[#1d1836] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        >
+          <Tilt>
+            <h3 className="text-white   text-center text-[24px] font-bold">
+              {title}
+            </h3>
+          </Tilt>
+
+          <div className="xs:w-[450px] w-full  xs:flex xs:flex-row xs:flex-wrap flex flex-row flex-wrap  justify-center px-1 mx-1 text-white  text-[18px] ">
+            {text.map((skill) => (
+              <Tilt className="bg-white/10 m-1 px-1 rounded-sm">{skill}</Tilt>
+            ))}
+          </div>
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
+
 const Tech = () => {
+  const skills = [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "redux",
+    "hooks",
+    "Rest APIs",
+    "TypeScript",
+    "Python",
+    "JQUERY",
+    "Next.js",
+    "Three.js",
+    "Git, GitHub",
+    "Datatypes",
+    "Bootstrap",
+    "SASS",
+    "Tailwind",
+    "Figma",
+    "Adobe XD",
+    "UI",
+  ];
+  const softSkills = [
+    "Responsive Design",
+    "Communication",
+    "E-Commerce",
+    "Problem-Solving",
+    "Team Collaboration",
+    "Time Management",
+    "Attention to Detail",
+    "Accountability",
+  ];
+  // const skills =
+  //   "HTML5, CSS3, JavaScript , React, redux, hooks, Rest APIs , TypeScript, Python, JQUERY, Three.js , Git, GitHub, Next.js, Datatypes , Bootstrap, SASS, Tailwind, Figma, Adobe XD, UI";
+  // const softSkills2 =
+  //   "Responsive Design, Communication, E-Commerce, Problem-Solving,Team Collaboration, Time Management, Attention to Detail, Accountability";
+
   return (
     <div>
       <motion.div
@@ -25,34 +91,10 @@ const Tech = () => {
             <BallCanvas icon={tech.icon} />
           </div>
         ))}
-        <div className="flex flex-wrap mr-8 w-auto text-justify pl-0 ml-0 md:justify-center">
-          <div className="container flex flex-row">
-            <div className="container flex flex-row w-7">
-              <h2 className="flex text-secondary text-[20px] sm:text-2xl  ">
-                Skills:
-              </h2>
-            </div>
-            <br />
-            <p className="flex sm:text-justify  ml-[85px]   text-secondary text-[17px] max-w-3xl leading-[30px]">
-              HTML, CSS, JavaScript , React, redux, hooks, Rest APIs ,
-              TypeScript, Python, JQUERY, Three.js , Git, GitHub, Next.js,
-              Datatypes , Bootstrap, SASS, Tailwind, Figma, Adobe XD, UI and UX{" "}
-            </p>
-            <br />
-          </div>
-          <div className="container flex flex-row ">
-            <div className="container flex flex-row w-7">
-              <h2 className=" flex text-secondary  lg:text-[20px] sm:text-2xl  ">
-                Soft Skills:
-              </h2>
-            </div>
-            <br />
-            <p className=" flex sm:text-justify  ml-[85px]  text-secondary text-[17px] max-w-3xl leading-[30px]">
-              Responsive Design, Communication, E-Commerce, Problem-Solving,
-              Team Collaboration, Time Management, Attention to Detail,
-              Accountability
-            </p>
-          </div>
+
+        <div className="flex  flex-wrap text-justify gap-10 ml-0 mt-2 md:mt-10 justify-center">
+          <ServiceCard title="Skills" text={skills} index="1" />
+          <ServiceCard title="Soft Skills" text={softSkills} index="2" />
         </div>
       </div>
     </div>

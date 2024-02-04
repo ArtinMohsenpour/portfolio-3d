@@ -44,6 +44,7 @@ import recipefinder from "./recipefinder.png";
 import piggame from "./piggame.png";
 import firstportfolio from "./firstportfolio.png";
 import personalvlog from "./personalvlog.png";
+import download from "./download.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -51,6 +52,7 @@ import tripguide from "./tripguide.png";
 
 export {
   piggame,
+  download,
   ecommerce,
   personalvlog,
   onlinemenu,

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import resume from "../assets/resume.pdf";
+import { download } from "../assets";
 import { logo, logoartin2, logoartin3, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -29,18 +30,18 @@ const Navbar = () => {
             className=" w-9 h-9 object-contain"
           />
 
-          <p className="text-white sm:text-[18px] font-bold cursor-pointer flex ">
+          <p className="text-white text-[14px] sm:text-[18px] font-bold cursor-pointer flex ">
             Abolfazl <span className="sm:block hidden"></span> &nbsp;
             <span>&nbsp; Mohsenpour | &nbsp; Portfolio</span>
           </p>
         </Link>
-        <ul className="list-none hidden md:flex flex:row gap-10">
+        <ul className="list-none hidden md:flex justify-end flex:row gap-6">
           {navLinks.map((link) => (
             <li
               key={link.id}
               className={`${
                 active === link.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              } hover:text-white  text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(link.title)}
             >
               {link.id === "resume" ? (
@@ -49,8 +50,14 @@ const Navbar = () => {
                   download="Abolfazl-Mohsenpour-CV-en.pdf"
                   target="_blank"
                   rel="noreferrer"
+                  className="flex"
                 >
                   {link.title}
+                  <img
+                    src={download}
+                    alt="download icon"
+                    className=" w-5 h-auto mx-1 object-contain"
+                  />
                 </a>
               ) : (
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -59,7 +66,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden items-center flex flex-1 justify-end">
+        <div className="md:hidden items-center flex flex-1 justify-end">
           <img
             src={toggle ? close : menu}
             alt="menu"
@@ -90,8 +97,14 @@ const Navbar = () => {
                       download="Abolfazl-Mohsenpour-CV-en.pdf"
                       target="_blank"
                       rel="noreferrer"
+                      className="flex"
                     >
                       {link.title}
+                      <img
+                        src={download}
+                        alt="download icon"
+                        className="w-5 h-auto mx-1 object-contain "
+                      />
                     </a>
                   ) : (
                     <a href={`#${link.id}`}>{link.title}</a>
